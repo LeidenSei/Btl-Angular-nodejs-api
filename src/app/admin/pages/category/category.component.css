@@ -1,0 +1,12 @@
+.form_admin{
+    border: 3px rgb(219, 186, 186) solid;
+    border-radius: 4px;
+}
+.btn_admin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formAdmin{
+    border-right: 2px solid purple;
+}

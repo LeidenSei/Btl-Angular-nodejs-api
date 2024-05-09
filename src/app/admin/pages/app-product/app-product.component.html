@@ -1,0 +1,25 @@
+<div class="col-lg-10 col-md-12">
+    <div class="form_admin p-2">
+     <form [formGroup]="profileProd" (submit)="addProd()">
+         <div class="form-group">
+           <label class="d-flex justify-content-lg-center align-items-lg-center text-info h3">Name of product</label>
+           <input type="text" class="form-control" id="exampleInputEmail1"  formControlName="name" >
+         </div>
+         <div class="form-group">
+           <label class="d-flex justify-content-lg-center align-items-lg-center text-info h3">Enter price($)</label>
+           <input type="text" class="form-control" id="exampleInputEmail1"  formControlName="price" >
+         </div>
+         <div class="form-group">
+           <label class="d-flex justify-content-lg-center align-items-lg-center text-info h3">Insert image</label>
+           <input type="file" class="form-control" id="exampleInputEmail1" (change)="uploadFile($event)" enctype="multipart/form-data" ><img [src]="preview" class="w-50" />
+         </div>
+         <div class="form-group">
+           <label for="">Select category</label>
+           <select class="form-control" formControlName="category_id" id="">
+             <option *ngFor="let item of listCate" value="{{item.id}}">{{item.name}}</option>
+           </select>
+         </div>
+         <div class="btn_admin"><button type="submit" class="btn btn-success">Submit</button></div>
+       </form>
+    </div>
+ </div>

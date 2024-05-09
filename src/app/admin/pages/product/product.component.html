@@ -1,0 +1,75 @@
+<div class="btn btn-success" routerLink="../addPro">Add new product</div>
+<div class="row ">
+  
+    <div class="col-lg-10 col-md-12 border-left- border-success align-items-center">
+       <div class="">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Ordinal numbers</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Image</th>
+                    <th>Name of the category</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of listPro,let i = index">
+                    <td scope="row">{{i+1}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.price}}</td>
+                    <td><img src="{{item.image}}" alt="" width="100px"></td>
+                    <td>{{item.category}}</td>
+                    <td>
+                        <a class="btn btn-danger" (click)="deletePro(item.id)" >Delete</a>
+                        <a class="btn btn-info"  (click)="editPro(item.id)">Edit</a>
+                    </td>
+                </tr> 
+            </tbody>
+           </table>
+       </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Edit product information</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                <div class="col-lg-10 col-md-12">
+                    <div class="form_admin p-2">
+                     <form [formGroup]="profileProd" (submit)="updatePro()">
+                         <div class="form-group">
+                           <label class="d-flex justify-content-lg-center align-items-lg-center text-info h3">Name of the product</label>
+                           <input type="text" class="form-control" id="exampleInputEmail1"  formControlName="name" value="{{prod.name}}">
+                         </div>
+                         <div class="form-group">
+                           <label class="d-flex justify-content-lg-center align-items-lg-center text-info h3">Price</label>
+                           <input type="text" class="form-control" id="exampleInputEmail1"  formControlName="price" value="{{prod.price}}">
+                         </div>
+                         <div class="form-group">
+                           <label class="d-flex justify-content-lg-center align-items-lg-center text-info h3">Name of the category</label>
+                           <input type="file" class="form-control" id="exampleInputEmail1" (change)="selectFile($event)" enctype="multipart/form-data" ><img [src]="image" class="w-50" />
+                         </div>
+                         <div class="form-group">
+                           <label for="">Select category</label>
+                           <select class="form-control" formControlName="category_id" id="">
+                             <option *ngFor="let item of listCate" value="{{item.id}}" [selected]="prod.category_id===item.id">{{item.name}}</option>
+                           </select>             
+                         </div>
+                         <div class="btn_admin"><button type="submit" class="btn btn-success">Submit</button></div>
+                       </form>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,98 @@
+
+<div class="ad_header mb-2 border-bottom">
+    
+    <div class="header">
+        <div class="header_top p-2 border-bottom ">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-end align-items-center">
+                    <div class="part_1_right " *ngIf="acc">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle option_art" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Xin chào {{acc}}</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" (click)="logOut()">Log out your account</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part_1_right d-flex justify-content-around" *ngIf="!acc">
+                        <div class="login margin_item">
+                            <a  class="none_display_a " routerLink="login-customer">Login</a>
+                        </div>
+                        <div class="regis margin_item">
+                            <a  class="none_display_a" routerLink="regis">Register</a>
+                        </div>    
+                    </div>
+                    <div class="part_2_right d-flex justify-content-between">
+                        <div class="icon margin_item">
+                            <a  class="none_display_a "><i class="fa-solid fa-gift"></i></a>
+                        </div>
+                        <div class="icon margin_item">
+                            <a href="" class="none_display_a"><i class="fa-regular fa-heart"></i></a>
+                        </div>    
+                        <div class="icon margin_item">
+                           <a routerLink="cart"  class="none_display_a"><i class="fa-solid fa-cart-shopping"></i>{{cartItems}}</a>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="bottom_header p-3">
+        <div class="container-fluid">
+               <div class="row justify-content-lg-between align-items-center">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="logo">
+                            <a routerLink=""><img src="assets/img/logo.svg" alt="" width="auto" height="30px"></a>
+                        </div>
+                    </div>
+                <div class="col-lg-6 col-md-6 p-sm-12">
+                    <nav class="navbar navbar-expand-sm navbar-light ">
+                        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavId">
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="main.html"><span class="sr-only">(current)</span></a>
+                                </li>
+                                <div class="d-md-flex justify-content-md-center flex-md-wrap">
+                                    <li class="nav-item ">
+                                        <a class="nav-link dropdown-toggle option_art" routerLink="loginCus" aria-haspopup="true" aria-expanded="false">Login</a>
+                                        
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link dropdown-toggle option_art" routerLink="regis" aria-haspopup="true" aria-expanded="false">Register</a>
+                                      
+                                    </li>
+                                    <li class="nav-item "> 
+                                        <a class="nav-link dropdown-toggle option_art" routerLink="cart" aria-haspopup="true" aria-expanded="false">Cart</a>
+                                    
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link dropdown-toggle option_art" routerLink="" aria-haspopup="true" aria-expanded="false">Contact</a>
+
+                                    </li>
+                                  
+                                </div>
+                                
+                            </ul> 
+                        </div>
+                        </nav>
+                    </div>
+                        <div class="col-lg-3 col-md-12 ">
+                            <form class="form-inline my-2 my-lg-0 ">
+                                <div class=" d-sm-flex justify-content-sm-around">
+                                    <input class="form-control mr-sm-2 " type="text" placeholder="Art">
+                                <button class="btn position_search btn-outline-info " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </div>
+                                
+                            </form>
+                        </div>
+                   
+                </div>
+        </div>
+</div>
+ 
+</div>
+
+

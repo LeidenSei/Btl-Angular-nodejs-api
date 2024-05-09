@@ -1,0 +1,275 @@
+.margin_item{
+    margin-right: 8px !important; 
+}
+.login{
+    padding-right: 8px;
+    border-right: 3px solid black;
+}
+.none_display_a{
+    text-decoration: none;
+    color: black;
+}
+.none_display_a:hover{
+    text-decoration: none;
+    color: rgb(185, 143, 64);
+}
+
+
+.position_search a{
+    color: gray;
+}
+.item_content{
+    border: 1px solid;
+}
+.item_content a{
+    padding: 13px 16px 14px;
+ 
+    font-weight: bold;
+}
+.option_art{
+    font-weight: bold;
+    color: black !important;
+}
+.width_card{
+    width: 25%;
+}
+.a_image a{
+    text-decoration: underline;
+    color: black;
+}
+.font_card{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.btn_option2{
+    border-radius: 0;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid black;
+}
+.border_card{
+    border: none;
+}
+.text_card{
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0px;
+}
+.size_text{
+    font-size: 12px;
+}
+.btn_option3{
+    border-radius: 0;
+    padding: 10px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+.para_secret{
+    margin: 0 auto;
+}
+.note_img img{
+    height: 44px;
+    width: 220px;
+    margin: 10px auto;
+}
+.bg_person{
+    background: rgb(249, 249, 249);
+}
+.Title_person{
+    font-size: 40px;
+    margin: 0px 0px 20px;
+    font-weight: normal
+}
+.note_text{
+    padding: 20px 0px;
+}
+.btn_work{
+    padding: 10px;
+    border-radius: none; 
+}
+.near_foot{
+    margin-top: 20px;
+}
+.a_th th{
+    text-align: center;
+    padding: 0;
+    border: none;
+}
+.a_th th a{
+    color: black;
+    
+}
+.a_th th a:hover{
+    text-decoration: none;
+}
+.th_font a{
+    font-size: 12px !important;
+    color: gray !important;
+}
+.bolde{
+    font-weight: bold;
+    font-size: 30px;
+}
+.icon_search a{
+    color: gray;
+}
+.homme{
+    margin-top: 30px;
+}
+.a1{
+    margin-right: 3px;
+}
+.a1 a{
+    color: gray;
+}
+.finalll{
+    margin-top: 20px;
+}
+
+.p1{
+    font-weight: bold;
+    font-size: 30px;
+    font-style: italic;
+}
+.p2{
+    color: orange;
+}
+.p3{
+    font-size: 14px;
+}
+.color_price{
+    font-size: 30px;
+    color: white;
+    font-weight: bold
+}
+.color_price span{
+    font-weight: normal;
+    font-size: 20px;
+    color: grey;
+}
+.button_cart a{
+    border-radius: 0;
+    background-color: orangered;
+    width: 150px;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+}
+.button_cart a:hover{
+    border: none;
+    background-color:orangered;
+    color: white;
+}
+.ofer a{
+    color: white;
+    font-weight: bold;
+}
+.ofer:hover a{
+    text-decoration: none;
+}
+.color_ship{
+    color: black;
+}
+.heart_person a{
+    color: black;
+}
+.heart_person a:hover{
+    text-decoration: none;
+    color: black;
+}
+.bg_container_final{
+    background: rgb(249, 249, 249);
+}
+.nav_color{
+    color:black;
+    font-weight: bold;
+}
+.art_control{
+    position: relative;
+}
+.search_sp{
+    right: 10px;
+    position: absolute;
+    
+}
+.bg_see{
+    
+    border-radius: 0px;
+    padding: 10px;
+    background-color: white;
+}
+.left_a{
+    font-size: 30px;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+}
+.fa-arrow-left{
+    left: -30px;
+}
+.fa-arrow-right{
+    right: -30px;
+}
+.left_a:hover{
+    color: black;
+}
+.none_body{
+    padding: 0px;
+}
+.left_profile img{
+    border-radius: 50%;
+}
+.nemae{
+    font-weight: bold;
+}
+.btn_profile {
+    border: 1px solid black;
+}
+.bg_profile{
+    background: rgb(243, 243, 243);
+}
+._explore{
+    width: 250px;
+    padding: 15px;
+}
+.border_card:hover img{
+    transform: scale(1.1);
+}
+.late{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: grey;
+}
+.grey{
+    color: grey;
+}
+.fb{
+    color:black !important;
+}
+.insta{
+    color: black !important;
+}
+.youtube{
+    color: black !important;
+}
+.tiktok{
+    color: black !important;
+}
+.heyy a{
+    color: black;
+}
+.back_top{
+    font-size: 40px;
+    color:green;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+.none_boder{
+    background: rgb(243, 243, 243);
+    border: none;
+}
+.back_top{
+    display: none !important;
+}

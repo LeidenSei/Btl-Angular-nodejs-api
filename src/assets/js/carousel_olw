@@ -1,0 +1,10 @@
+$(document).ready(()=>{
+    $(window).scroll(()=>{
+        let _height=$(this).scrollTop();
+        if(_height>400){
+            $('back_top').show();
+        } else{
+            $('back_top').hide();
+        }
+    })
+})

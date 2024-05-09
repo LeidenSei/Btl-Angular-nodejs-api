@@ -1,0 +1,15 @@
+<app-header></app-header>
+<div class="container-fluid">
+    <div class="row justify-content-lg-between">
+        <div class="col-lg-2 ">
+           <div class="list-group">
+            <a [routerLink]="['/routePath']" routerLinkActive="router-link-active"  class="list-group-item list-group-item-action list-group-item-primary active">Active item</a>
+            <a [routerLink]="['category']" routerLinkActive="router-link-active"  class="list-group-item list-group-item-action list-group-item-primary">Manage categories</a>
+            <a [routerLink]="['product']" routerLinkActive="router-link-active"  class="list-group-item list-group-item-action list-group-item-primary ">Manage products</a>
+           </div>
+        </div>
+        <div class="col-lg-10">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
